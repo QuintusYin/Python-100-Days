@@ -3,8 +3,8 @@
 将100以内的素数写入到文件中
 
 Version: 0.1
-Author: 骆昊
-Date: 2018-03-13
+Author: 尹诗流
+Date: 2020-07-26
 """
 
 from math import sqrt
@@ -20,7 +20,7 @@ def is_prime(n):
 # 试一试有什么不一样
 # with open('prime.txt', 'a') as f:
 with open('prime.txt', 'w') as f:
-    for num in range(2, 100):
+    for num in range(2, 1000):
         if is_prime(num):
             f.write(str(num) + '\n')
 print('写入完成!')

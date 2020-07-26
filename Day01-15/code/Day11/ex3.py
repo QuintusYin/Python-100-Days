@@ -22,7 +22,7 @@ except UnicodeDecodeError as msg:
 else:
     for line in lines:
         print(line.rstrip())
-        time.sleep(0.5)
+        time.sleep(0.3)
 finally:
     # 此处最适合做善后工作
     print('不管发生什么我都会执行')

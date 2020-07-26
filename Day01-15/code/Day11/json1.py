@@ -7,7 +7,6 @@ Date: 2018-03-13
 """
 
 import json
-import csv2
 
 json_str = '{"name": "骆昊", "age": 38, "title": "叫兽"}'
 result = json.loads(json_str)
@@ -17,11 +16,11 @@ print(result['name'])
 print(result['age'])
 
 # 把转换得到的字典作为关键字参数传入Teacher的构造器
-teacher = csv2.Teacher(**result)
-print(teacher)
-print(teacher.name)
-print(teacher.age)
-print(teacher.title)
+# teacher = _csv.teacher(**result)
+# print(teacher)
+# print(teacher.name)
+# print(teacher.age)
+# print(teacher.title)
 
 # 请思考如何将下面JSON格式的天气数据转换成对象并获取我们需要的信息
 # 稍后我们会讲解如何通过网络API获取我们需要的JSON格式的数据
