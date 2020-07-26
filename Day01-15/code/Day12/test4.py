@@ -1,4 +1,4 @@
-import re
+import re, time
 
 
 def main():
@@ -9,17 +9,19 @@ def main():
     不是15600998765，也是110或119，王大锤的手机号才是15600998765。
     '''
     # 查找所有匹配并保存到一个列表中
-    mylist = re.findall(pattern, sentence)
-    print(mylist)
+    my_list = re.findall(pattern, sentence)
+    print(my_list)
     print('--------华丽的分隔线--------')
     # 通过迭代器取出匹配对象并获得匹配的内容
     for temp in pattern.finditer(sentence):
         print(temp.group())
+        time.sleep(0.5)  # 引入sleep函数让显示更有趣
     print('--------华丽的分隔线--------')
     # 通过search函数指定搜索位置找出所有匹配
     m = pattern.search(sentence)
     while m:
         print(m.group())
+        time.sleep(0.5)  # 引入sleep函数让显示更有趣
         m = pattern.search(sentence, m.end())
 
 
