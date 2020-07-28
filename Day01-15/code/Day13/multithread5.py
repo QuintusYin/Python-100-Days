@@ -8,6 +8,7 @@ Date: 2018-03-20
 
 from time import sleep
 from threading import Thread, Lock
+import tqdm
 
 
 class Account(object):

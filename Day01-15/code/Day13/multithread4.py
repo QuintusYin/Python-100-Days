@@ -18,7 +18,7 @@ def main():
 
         def run(self):
             # 模拟下载任务需要花费10秒钟时间
-            time.sleep(10)
+            time.sleep(5)
             tkinter.messagebox.showinfo('提示', '下载完成!')
             # 启用下载按钮
             button1.config(state=tkinter.NORMAL)
@@ -30,11 +30,11 @@ def main():
         DownloadTaskHandler(daemon=True).start()
 
     def show_about():
-        tkinter.messagebox.showinfo('关于', '作者: 骆昊(v1.0)')
+        tkinter.messagebox.showinfo('关于', '作者: 尹诗流爱王珏')
 
     top = tkinter.Tk()
     top.title('单线程')
-    top.geometry('200x150')
+    top.geometry('400x280')
     top.wm_attributes('-topmost', 1)
 
     panel = tkinter.Frame(top)

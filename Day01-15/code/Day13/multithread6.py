@@ -35,7 +35,7 @@ class Account(object):
 if __name__ == '__main__':
     account = Account()
     # 创建100个存款的线程向同一个账户中存钱
-    for _ in range(100):
+    for _ in range(300):  # 107元
         threading.Thread(target=account.deposit, args=(1,)).start()
     # 等所有存款的线程都执行完毕
     time.sleep(2)
