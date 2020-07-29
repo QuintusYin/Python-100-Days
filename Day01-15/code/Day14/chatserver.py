@@ -22,8 +22,8 @@ def main():
                         else:
                             for client in clients:
                                 client.send(data)
-                    except Exception as e:
-                        print(e)
+                    except Exception as e1:
+                        print(e1)
                         clients.remove(self._client)
                         break
             except Exception as e:

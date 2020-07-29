@@ -5,7 +5,7 @@ from base64 import b64decode
 
 def main():
     client = socket()
-    client.connect(('192.168.1.2', 5566))
+    client.connect(('211.86.158.1', 5566))
     # 定义一个保存二进制数据的对象
     in_data = bytes()
     # 由于不知道服务器发送的数据有多大每次接收1024字节

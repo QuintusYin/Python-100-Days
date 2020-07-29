@@ -21,3 +21,4 @@ for x in range(4):
 img2.resize((img.size[0] // 2, img.size[1] // 2))
 img2.rotate(90)
 img2.save('./res/guido2.png')
+img2.show()

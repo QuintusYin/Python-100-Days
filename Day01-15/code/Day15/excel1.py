@@ -17,7 +17,7 @@ data = [
 sheet.append(['学号', '姓名', '性别', '电话'])
 for row in data:
     sheet.append(row)
-tab = Table(displayName="Table1", ref="A1:E5")
+tab = Table(displayName="Table1", ref="A1:D4")
 
 tab.tableStyleInfo = TableStyleInfo(
     name="TableStyleMedium9", showFirstColumn=False,
