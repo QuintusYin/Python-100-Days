@@ -23,12 +23,12 @@ class StreamHasher():
 
     def digest(self, file_stream):
         """生成十六进制的摘要字符串"""
-        # data = file_stream.read(self.size)
-        # while data:
-        #     self.hasher.update(data)
-        #     data = file_stream.read(self.size)
-        for data in iter(lambda: file_stream.read(self.size), b''):
+        data = file_stream.read(self.size)
+        while data:
             self.hasher.update(data)
+            data = file_stream.read(self.size)
+        # for data in iter(lambda: file_stream.read(self.size), b''):
+        #     self.hasher.update(data)
         return self.hasher.hexdigest()
 
     def __call__(self, file_stream):

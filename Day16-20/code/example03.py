@@ -65,11 +65,11 @@ def main():
     # gen = fib3(20)
     # for _ in range(10):
     #     print(next(gen))
-    for num in range(1, 121):
-        with timer():
-            print(f'{num}: {fib(num)}')
-    # print(fac(5))
-    # print(fac(-5))
+    # for num in range(1, 121):
+    #     with timer():
+    #         print(f'{num}: {fib(num)}')
+    print(fac(5))
+    print(fac(-5))
 
 
 if __name__ == '__main__':

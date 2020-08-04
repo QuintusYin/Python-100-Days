@@ -45,6 +45,8 @@ def bin_search(items, elem):
 
 def main():
     """主函数（程序入口）"""
+    pyplot.rcParams['font.sans-serif'] = ['SimHei']  # 显示中文
+    pyplot.rcParams['axes.unicode_minus'] = False  # 显示负号
     num = 6
     styles = ['r-.', 'g-*', 'b-o', 'y-x', 'c-^', 'm-+', 'k-d']
     legends = ['对数', '线性', '线性对数', '平方', '立方', '几何级数', '阶乘']

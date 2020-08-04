@@ -48,7 +48,7 @@ def output_to_db(fname, duration):
         con.close()
 
 
-@record(output_to_console)
+@record(output_to_file)
 def random_delay(min, max):
     sleep(randint(min, max))
 
