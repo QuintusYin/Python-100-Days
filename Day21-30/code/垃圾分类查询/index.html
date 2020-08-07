@@ -75,7 +75,7 @@
             <div v-for="result in results">
                 <p>
                     <!-- img是图像标签 可以用来实现图片-->
-                    <img :src="'images/' + pictures[result.type]" width="56" :alt="types[result.type]">
+                    <img src="'images/' + pictures[result.type]" width="56" alt="types[result.type]">
                     &nbsp;&nbsp;
                     <!-- span是跨度标签 代表一个逻辑区域-->
                     <span>{{ result.name }}</span>
@@ -102,7 +102,7 @@
                 // 查询垃圾分类的函数
                 search() {
                     if (this.word.trim().length > 0) {
-                        let key = '9636cec76ee2593ba6b195e5b770b394'
+                        let key = '1ae8f788878e0720bbeccf9e08d31264'
                         let url = `http://api.tianapi.com/txapi/lajifenlei/?key=${key}&word=${this.word}`
                         fetch(url)
                             .then(resp => resp.json())
